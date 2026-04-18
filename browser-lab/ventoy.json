@@ -3,7 +3,7 @@
     "boot_params": [
         {
             "image": "/Fedora-Workstation-Live-43-1.6.x86_64",
-            "param": "inst.ks=hd:LABEL=Ventoy:/kickstart.cfg"
+            "param": "inst.ks=hd:LABEL=Ventoy:/browser-lab.cfg"
         }
     ]
 }
