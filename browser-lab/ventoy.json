@@ -2,7 +2,7 @@
 {
     "boot_params": [
         {
-            "image": "/Fedora-Workstation-Live-x86_64-43-1.1.iso",
+            "image": "/Fedora-Workstation-Live-43-1.6.x86_64",
             "param": "inst.ks=hd:LABEL=Ventoy:/kickstart.cfg"
         }
     ]
