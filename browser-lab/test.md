@@ -20,3 +20,8 @@ menuentry "Fedora Linux 43" {
     initrd /initramfs-6.17.1-300.fc43.x86_64.img
 }
 ```
+```
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-43.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-43.noarch.rpm
+sudo dnf install -y broadcom-wl
+sudo reboot
+```
