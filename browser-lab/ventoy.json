@@ -1,9 +1,10 @@
-# Inside ventoy USB: ventoy/ventoy.json
+// Inside ventoy USB: ventoy/ventoy.json
+//without these comments
 {
-    "boot_params": [
-        {
-            "image": "/Fedora-Workstation-Live-43-1.6.x86_64",
-            "param": "inst.ks=hd:LABEL=Ventoy:/browser-lab.cfg"
-        }
-    ]
+  "boot_params": [
+    {
+      "image": "/Fedora-Workstation-Live-43-1.6.x86_64",
+      "param": "inst.ks=hd:LABEL=Ventoy:/browser-lab.cfg"
+    }
+  ]
 }
