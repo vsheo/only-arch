@@ -25,3 +25,45 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf install -y broadcom-wl
 sudo reboot
 ```
+```
+services:
+
+  chrome-96:
+    image: selenium/standalone-chrome:4.1.0-20211209
+    container_name: chrome-96
+    ports:
+      - "4401:4444"
+      - "7001:7900"
+    environment:
+      - SE_VNC_NO_PASSWORD=1
+      - SE_SCREEN_WIDTH=1920
+      - SE_SCREEN_HEIGHT=1080
+    shm_size: "2g"
+    restart: unless-stopped
+
+  firefox-95:
+    image: selenium/standalone-firefox:4.1.0-20211209
+    container_name: firefox-95
+    ports:
+      - "4501:4444"
+      - "7101:7900"
+    environment:
+      - SE_VNC_NO_PASSWORD=1
+      - SE_SCREEN_WIDTH=1920
+      - SE_SCREEN_HEIGHT=1080
+    shm_size: "2g"
+    restart: unless-stopped
+
+  edge-96:
+    image: selenium/standalone-edge:4.1.0-20211209
+    container_name: edge-96
+    ports:
+      - "4601:4444"
+      - "7201:7900"
+    environment:
+      - SE_VNC_NO_PASSWORD=1
+      - SE_SCREEN_WIDTH=1920
+      - SE_SCREEN_HEIGHT=1080
+    shm_size: "2g"
+    restart: unless-stopped
+```
